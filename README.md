@@ -283,5 +283,4 @@ confirm `git status` shows no `credentials.yaml`, no `.secrets/`, and no
 
 ## License
 
-Add a license of your choice before publishing (e.g. `LICENSE` with MIT or
-GPL-2.0-or-later to match the WordPress ecosystem).
+GPL-2.0
