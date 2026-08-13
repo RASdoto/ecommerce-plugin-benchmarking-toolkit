@@ -1,0 +1,11 @@
+{
+  "_locale": "user",
+  "portal_subscription_update_enabled": true,
+  "recurring_interval": null,
+  "recurring_interval_count": null,
+  "recurring_period_count": null,
+  "name": "This Is Product Name",
+  "price_name": "This Is Price Name",
+  "amount": "1200.00",
+  "scratch_amount": "1500.00"
+}

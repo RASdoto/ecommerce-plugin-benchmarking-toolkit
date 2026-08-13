@@ -1,0 +1,10 @@
+{
+    "first_name": "John",
+    "last_name": "Doe",
+    "email": "johndoe@example.com",
+    "user_login": "johndoe",
+    "password": "your_password",
+    "num_customers": 1,
+    "customer_id": 1
+  }
+  

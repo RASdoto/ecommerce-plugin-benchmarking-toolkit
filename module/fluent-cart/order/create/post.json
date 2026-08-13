@@ -1,0 +1,21 @@
+{
+  "customer_id": 0,
+  "order_items": [
+    {
+      "post_id": 0,
+      "variation_id": 0,
+      "object_id": 0,
+      "quantity": 1,
+      "unit_price": 2500,
+      "price": 2500,
+      "item_total": 2500,
+      "total": 2500,
+      "line_total": 2500,
+      "title": "Bench Item"
+    }
+  ],
+  "subtotal": 2500,
+  "total_amount": 2500,
+  "payment_method": "offline_payment",
+  "shipping_total": 0
+}

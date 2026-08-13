@@ -1,0 +1,22 @@
+{
+  "payment_data": {
+    "price": 19.95,
+    "user_info": {
+      "email": "example@example.com",
+      "first_name": "md kamrul",
+      "last_name": "islam"
+    },
+    "currency": "USD",
+    "status": "complete",
+    "payment_method": "paypal",
+    "items": [
+      {
+        "id": 123,
+        "quantity": 1
+      }
+    ],
+    "meta": {
+      "_edd_payment_status": "publish"
+    }
+  }
+}

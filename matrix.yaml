@@ -1,0 +1,35 @@
+# Experiment knobs — NO secrets here. Ships with capped, realistic defaults.
+# Volume axes are per-entity and hard-capped (products <= 100k, orders <= 5k).
+
+platforms: [fluentcart, woo, edd]
+
+operations:
+  - product-list
+  - product-create
+  - order-create
+  - product-list        # (read) kept once; duplicates are de-duped by cell key
+
+# Per-entity volume tiers (capped)
+product_volumes:  [1000, 10000, 50000, 100000]
+order_volumes:    [100, 500, 1000, 2500, 5000]
+customer_volumes: [100, 500, 1000, 2500, 5000]
+
+# Concurrency tiers — reads sweep higher than writes
+read_concurrency:  [1, 10, 25, 50, 100]
+write_concurrency: [1, 5, 10, 25, 50]
+
+# Prerequisite baseline seeded before order placement (small so a 1-request
+# smoke cell doesn't have to build a large catalogue first). Raise for a more
+# realistic order-benchmark that references a wider product/customer set.
+prereq_products: 10
+prereq_customers: 5
+
+# Seed-stage throttle (protects the REST API; seed-only, never applied to load runs)
+seed_max_rps: 10
+seed_concurrency: 3
+seed_batch_size: 200
+seed_batch_pause: 1.0
+wpcli_switch_products: 50000
+
+# Per-request client timeout (seconds)
+request_timeout: 30

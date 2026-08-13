@@ -1,0 +1,11 @@
+
+{
+"post_title" : "product title",
+"post_content"  : "product description",
+"post_status"   : "publish",
+"post_author"   : 1,
+"post_type"     :  "download",
+"pricing": {
+    "amount": 100
+  }
+}

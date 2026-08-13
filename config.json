@@ -1,0 +1,143 @@
+{
+    "base_url": "https://your-fluentcart-site.example.com/wp-json/",
+    "default_module": "wp",
+    "fluent-cart": {
+      "order": {
+        "create": {
+          "url": "fluent-cart/v2/orders",
+          "max_request": 100,
+          "concurrency": 10,
+          "insecure": true,
+          "quiet": true,
+          "dump_body": true
+        }
+      },
+      "products": {
+        "list": {
+          "url": "fluent-cart/v2/public/products",
+          "max_request": 100,
+          "concurrency": 10,
+          "insecure": true,
+          "quiet": true,
+          "dump_body": false
+        },
+        "create": {
+          "url": "fluent-cart/v2/products",
+          "max_request": 100,
+          "concurrency": 10,
+          "insecure": true,
+          "quiet": true,
+          "dump_body": false
+        }
+      }
+    },
+    "woo": {
+      "order": {
+        "create": {
+          "url": "wc/v3/orders",
+          "max_request": 1800,
+          "concurrency": 10,
+          "insecure": true,
+          "quiet": true,
+          "dump_body": false
+        }
+      },
+      "products": {
+        "create": {
+          "url": "wc/v3/products",
+          "max_request": 100,
+          "concurrency": 10,
+          "insecure": true,
+          "quiet": true,
+          "dump_body": true
+        },
+  
+        "list": {
+          "url": "wc/v3/products?per_page=50",
+          "max_request": 100,
+          "concurrency": 10,
+          "insecure": true,
+          "quiet": true,
+          "dump_body": false
+        }
+      }
+    },
+    "sure-cart": {
+      "products": {
+        "list": {
+          "url": "surecart/v1/products",
+          "max_request": 12,
+          "concurrency": 10,
+          "insecure": true,
+          "quiet": true,
+          "dump_body": false
+        },
+        "create": {
+          "url": "surecart/v1/products/",
+          "max_request": 10000,
+          "concurrency": 10,
+          "insecure": true,
+          "quiet": true,
+          "dump_body": false
+        }
+      },
+      "order": {
+        "create": {
+          "url": "surecart/v1/create-order",
+          "max_request": 10,
+          "concurrency": 10,
+          "insecure": true,
+          "quiet": true,
+          "dump_body": false
+        }
+      }
+    },
+    "edd": {
+      "order": {
+        "create": {
+          "url": "edd-cus/v1/create_order",
+          "max_request": 5000,
+          "concurrency": 10,
+          "insecure": true,
+          "quiet": true,
+          "dump_body": true
+        }
+      },
+      "customer": {
+        "create": {
+          "url": "custom-api/v1/create_customer/",
+          "max_request": 10,
+          "concurrency": 10,
+          "insecure": true,
+          "quiet": true,
+          "dump_body": true
+        }
+      },
+      "product": {
+        "list": {
+          "url": "edd-api/products/",
+          "max_request": 100,
+          "concurrency": 10,
+          "insecure": true,
+          "quiet": true,
+          "dump_body": true
+        },
+        "create": {
+          "url": "edd-cus/v1/create_product",
+          "max_request": 10000,
+          "concurrency": 10,
+          "insecure": true,
+          "quiet": true,
+          "dump_body": true
+        }
+      }
+    },
+    "wp": {
+      "url": "",
+      "max_request": 10,
+      "concurrency": 1,
+      "insecure": true,
+      "quiet": true,
+      "dump_body": false
+    }
+  }

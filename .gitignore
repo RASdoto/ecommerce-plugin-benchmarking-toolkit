@@ -1,0 +1,42 @@
+# ─────────────────────────────────────────────────────────────────────────
+#  SECRETS — never commit. The ONLY file you edit with real values is
+#  credentials.yaml (copied from credentials.example.yaml). It stays local.
+# ─────────────────────────────────────────────────────────────────────────
+credentials.yaml
+credentials.*.yaml
+!credentials.example.yaml
+.secrets/
+*.pem
+*.key
+id_rsa*
+
+# ─────────────────────────────────────────────────────────────────────────
+#  RUN ARTIFACTS — generated per run, machine-specific, not source.
+# ─────────────────────────────────────────────────────────────────────────
+reports/
+Publish/
+bootstrap_state.json
+heartbeat.json
+*.results.jsonl
+
+# ─────────────────────────────────────────────────────────────────────────
+#  PYTHON / ENV
+# ─────────────────────────────────────────────────────────────────────────
+.venv/
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.pytest_cache/
+
+# ─────────────────────────────────────────────────────────────────────────
+#  OS / EDITOR / ARCHIVES
+# ─────────────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+*.swp
+*.zip
+*.tar.gz
+.idea/
+.vscode/

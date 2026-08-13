@@ -1,0 +1,11 @@
+{
+  "name": "Bench Product",
+  "type": "simple",
+  "status": "publish",
+  "virtual": true,
+  "downloadable": false,
+  "regular_price": "25.00",
+  "description": "Benchmark product.",
+  "short_description": "Benchmark.",
+  "manage_stock": false
+}
